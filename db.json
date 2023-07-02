@@ -1,0 +1,95 @@
+{
+  "booking": [
+    {
+      "ten": "Nguyễn Văn A",
+      "cccd": "123456789",
+      "email": "nguyenvana@gmail.com",
+      "phone": "0901234567",
+      "ngaysinh": "5/4/2023",
+      "gioitinh": "Nam",
+      "checkin": "4/5/2023, 3:00:00 PM",
+      "checkout": "4/6/2023, 7:00:00 PM",
+      "loaiphong": "Phòng Standard (STD)",
+      "hanhli": "1Kg",
+      "id": 1
+    },
+    {
+      "ten": "Trần Thị B",
+      "cccd": "987654321",
+      "email": "tranthib@gmail.com",
+      "phone": "0912345678",
+      "ngaysinh": "2/2/1995",
+      "gioitinh": "Nữ",
+      "checkin": "4/7/2023, 9:00:00 PM",
+      "checkout": "4/9/2023, 5:00:00 PM",
+      "loaiphong": "Phòng Standard (STD)",
+      "hanhli": "3Kg",
+      "id": 2
+    },
+    {
+      "ten": "Lê Văn C",
+      "cccd": "135792468",
+      "email": "levanc@gmail.com",
+      "phone": "0923456789",
+      "ngaysinh": "3/3/1996",
+      "gioitinh": "Nam",
+      "checkin": "4/12/2023, 5:00:00 PM",
+      "checkout": "4/13/2023, 7:00:00 PM",
+      "loaiphong": "Phòng Superior (SUP)",
+      "hanhli": "1Kg",
+      "id": 3
+    },
+    {
+      "ten": "Trần Văn D",
+      "cccd": "246801357",
+      "email": "tranvand@gmail.com",
+      "phone": "0934567890",
+      "ngaysinh": "4/4/1992",
+      "gioitinh": "Nam",
+      "checkin": "4/14/2023, 3:00:00 PM",
+      "checkout": "4/16/2023, 5:00:00 PM",
+      "loaiphong": "Phòng Deluxe (DLX)",
+      "hanhli": "2Kg",
+      "id": 4
+    },
+    {
+      "ten": "Nguyễn Thị E",
+      "cccd": "369258147",
+      "email": "nguyenthe@gmail.com",
+      "phone": "0945678901",
+      "ngaysinh": "5/5/1998",
+      "gioitinh": "Nữ",
+      "checkin": "4/17/2023, 9:00:00 PM",
+      "checkout": "4/18/2023, 7:00:00 PM",
+      "loaiphong": "Phòng Suite (SUT)",
+      "hanhli": "5Kg",
+      "id": 5
+    },
+    {
+      "ten": "congcvsd",
+      "cccd": "987654321",
+      "email": "levanc@gmail.com",
+      "phone": "0912345678",
+      "ngaysinh": "10/4/2023",
+      "gioitinh": "Khác",
+      "checkin": "3/30/2023, 7:31:00 PM",
+      "checkout": "4/27/2023, 7:31:00 PM",
+      "loaiphong": "Phòng Standard (STD)",
+      "hanhli": "1Kg",
+      "id": 6
+    },
+    {
+      "ten": "Vũ chí công",
+      "cccd": "030203012123",
+      "email": "congvcph28670@gmail.com",
+      "phone": "0357028784",
+      "ngaysinh": "12/4/2023",
+      "gioitinh": "Nam",
+      "checkin": "4/4/2023, 10:54:00 AM",
+      "checkout": "4/21/2023, 10:54:00 AM",
+      "loaiphong": "Phòng Suite (SUT)",
+      "hanhli": "3Kg",
+      "id": 7
+    }
+  ]
+}
