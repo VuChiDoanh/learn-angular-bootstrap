@@ -1,0 +1,16 @@
+form>div>input::placeholder {
+    color: white;
+
+}
+header{
+    background-color: white;
+}
+button{
+    background-color: #E0B973;
+}
+footer{
+    background-color: #132F66;
+}
+.valid-input {
+    border-color: #4CAF50;
+}

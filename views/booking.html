@@ -1,0 +1,165 @@
+<div class="row text-center py-4" style="background-color: #204897;">
+    <h2 class="text-white">{{ title}}</h2>
+    <div class="text-white">fast & fastest</div>
+</div>
+<main class="container ">
+
+    <article class="row">
+        <div class="row">
+            <img src="images/banner-book.png" alt="" class="col-12">
+        </div>
+        <div class="row my-5">
+            <div class="col-3"> </div>
+            <div class="col-6 row p-5 border border-2 my-4">
+                <div class="text-center">
+                    <h2>Book Now!</h2>
+                </div>
+                <div class="text-center">
+                    <h5 class="text-secondary fw-normal fst-italic">Hãy để chúng tôi phục vụ bạn</h5>
+                </div>
+
+                <div class="col-6 my-2">
+                    <label for="">Họ và tên</label>
+                    <input type="text" class="form-control" ng-model="ten" placeholder="Nguyễn Văn A"
+                        ng-class="{ 'border border-success': kiemTra.ten == false && ten }">
+                    <div ng-show="kiemTra.ten" class="text-danger">Vui lòng nhập họ tên!</div>
+                </div>
+
+                <div class="col-6 my-2">
+                    <label for="">CMND/CCCD</label>
+                    <input type="text" class="form-control" ng-model="cccd" placeholder="030203012123"
+                        ng-class="{ 'border border-success': kiemTra.cccd == false && cccd  }">
+                    <div ng-show="kiemTra.cccd" class="text-danger">Vui lòng nhập CMND/CCCD hợp lệ!</div>
+                </div>
+
+                <div class="col-4 my-2">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" ng-model="email" placeholder="email@exemple.com"
+                        ng-class="{ 'border border-success': kiemTra.email == false && email && validateEmail(email) }">
+                    <div ng-show="kiemTra.email" class="text-danger">Vui lòng nhập email hợp lệ!</div>
+                </div>
+
+                <div class="col-4 my-2">
+                    <label for="">Phone</label>
+                    <input type="text" class="form-control" ng-model="phone" placeholder="03******87"
+                        ng-class="{ 'border border-success': kiemTra.phone === false && phone  }">
+                    <div ng-show="kiemTra.phone" class="text-danger">Vui lòng nhập số điện thoại hợp lệ!</div>
+                </div>
+
+                <div class="col-4 my-2">
+                    <label for="">Ngày sinh</label>
+                    <input type="date" name="" id="" class="form-control" ng-model="ngaysinh"
+                        ng-class="{ 'border border-success': kiemTra.ngaysinh == false && ngaysinh }">
+                    <div ng-show="kiemTra.ngaysinh" class="text-danger">Vui lòng nhập ngày sinh!</div>
+                </div>
+
+                <div class="col-12 my-2">
+                    <label for="">Giới tính: </label>
+                    <input type="radio" value="Nam" name="gioitinh" class="form-check-input" ng-model="gioitinh"
+                        ng-class="{ 'border border-success': kiemTra.gioitinh == false && gioitinh }">Nam
+                    <input type="radio" value="Nữ" name="gioitinh" class="form-check-input" ng-model="gioitinh"
+                        ng-class="{ 'border border-success': kiemTra.gioitinh == false && gioitinh }">Nữ
+                    <input type="radio" value="Khác" name="gioitinh" class="form-check-input" ng-model="gioitinh"
+                        ng-class="{ 'border border-success': kiemTra.gioitinh == false && gioitinh }">Khác
+                    <div ng-show="kiemTra.gioitinh" class="text-danger">Vui lòng chọn giới tính!</div>
+                </div>
+
+                <div class="col-6 my-2">
+                    <label for="">Check-in</label>
+                    <input type="datetime-local" name="" id="" class="form-control" ng-model="checkin"
+                        ng-class="{ 'border border-success': kiemTra.checkin == false && checkin }">
+                    <div ng-show="kiemTra.checkin" class="text-danger">Vui lòng nhập check-in date!</div>
+                </div>
+
+                <div class="col-6 my-2">
+                    <label for="">Check-out</label>
+                    <input type="datetime-local" name="" id="" class="form-control" ng-model="checkout"
+                        ng-class="{ 'border border-success': kiemTra.checkout == false && checkout }">
+                    <div ng-show="kiemTra.checkout" class="text-danger">Vui lòng nhập check-out date!</div>
+                </div>
+                <div class="col-6 my-2">
+                    <label for="">Loại phòng</label>
+                    <select name="" id="" class="form-control" ng-model="loaiphong">
+                        <option value="Phòng Standard (STD)">Phòng Standard (STD)</option>
+                        <option value="Phòng Superior (SUP)">Phòng Superior (SUP)</option>
+                        <option value="Phòng Deluxe (DLX)">Phòng Deluxe (DLX)</option>
+                        <option value="Phòng Suite (SUT)">Phòng Suite (SUT)</option>
+                        <option value="Connecting room">Connecting room</option>
+                        <option value="Double bed room (DBL)">Double bed room (DBL)</option>
+                        <option value="Triple bed room (TRPL)">Triple bed room (TRPL)</option>
+                        <option value="Extra bed">Extra bed</option>
+                        <option value="Single bed room (SGL)">Single bed room (SGL)</option>
+                        <option value="Twin bed room (TWN)">Twin bed room (TWN)</option>
+                    </select>
+                </div>
+                <div class="col-6 my-2">
+                    <label for="">Hành lí</label>
+                    <select name="" id="" class="form-control" ng-model="hanhli">
+                        <option value="1Kg">1Kg</option>
+                        <option value="2Kg">2Kg</option>
+                        <option value="3Kg">3Kg</option>
+                        <option value="4Kg">4Kg</option>
+                        <option value="5Kg">5Kg</option>
+                        <option value="6Kg">6Kg</option>
+                        <option value="7Kg">7Kg</option>
+                        <option value="8Kg">8Kg</option>
+                        <option value="9Kg">9Kg</option>
+                        <option value="Un-limit">Không giới hạn</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <p class="col-6"> </p>
+                    <button ng-click="submit()" class="btn text-white row col-2 my-3 py-2 fs-5 rounded-3"
+                        style="background-color: #E0B973;" onMouseOver="this.style.backgroundColor= '#A98E5B';"
+                        onMouseOut="this.style.backgroundColor= '#E0B973'" ">Đặt</button>
+    
+                    </div>
+                </div>
+                <div class=" col-3">
+                </div>
+
+            </div>
+            <div class="row">
+                <img src="images/banner-book-2.png" alt="" class="col-12">
+            </div>
+
+            
+    </article>
+
+</main>
+<div class="mx-5 row" >
+    <table border="1" class="my-5 table table-striped table-bordered">
+        <tr>
+            <th class="px-2">ID</th>
+            <th class="px-2">Tên khách hàng</th>
+            <th class="px-2">CCCD</th>
+            <th class="px-2">Email</th>
+            <th class="px-2">Số điện thoại</th>
+            <th class="px-2">Ngày sinh</th>
+            <th class="px-2">Giới tính</th>
+            <th class="px-2">Check-in</th>
+            <th class="px-2">Check-out</th>
+            <th class="px-2">Loại phòng</th>
+            <th class="px-2">Hành lí</th>
+            <th class="px-3">Thao tác</th>
+
+        </tr>
+        <tr ng-repeat="ds in danhsach">
+            <td>{{ds.id}}</td>
+            <td>{{ds.ten}}</td>
+            <td>{{ds.cccd}}</td>
+            <td>{{ds.email}}</td>
+            <td>{{ds.phone}}</td>
+            <td>{{ds.ngaysinh}}</td>
+            <td>{{ds.gioitinh}}</td>
+            <td>{{ds.checkin}}</td>
+            <td>{{ds.checkout}}</td>
+            <td>{{ds.loaiphong}}</td>
+            <td>{{ds.hanhli}}</td>
+
+
+            <td><button ng-click="onEdit(ds.id)" class="btn btn-success">Sửa</button> <button ng-click="onDelete(ds.id)" class="btn btn-danger">Xóa</button></td>
+            
+        </tr>
+    </table>
+</div>
