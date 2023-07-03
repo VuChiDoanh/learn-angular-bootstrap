@@ -1,6 +1,6 @@
 window.BookingController = function ($scope, $http) {
 
-    let apiUrl = "http://localhost:3000/booking";
+    let apiUrl = "https://doanh-learn-api.onrender.com/booking";
     $scope.getData = function () {
         $http.get(apiUrl).then(function (response) {
             console.log(response)
